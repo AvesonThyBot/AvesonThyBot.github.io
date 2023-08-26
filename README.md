@@ -1,4 +1,4 @@
-# valorant_web.github.io
+# Valorant Game website
 Valorant based website for web development practise
 #
 Multi-paged static website that will show:
