@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title and favicon -->
+        <title>One Piece Quiz</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="/css/quiz.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <a href="#" class="logo">One Piece Quiz.</a>
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/pages/aboutme.html">About</a>
+            <a href="/pages/quiz.html" class="active">Quiz</a>
+            <a href="#" id="remove-background" onclick="removeBackground()">
+                <img src="/images/delete-button.svg" alt="remove background button">
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main quiz container -->
+    <div class = "container">
+        <section class="quiz-section">
+            <div class="quiz-box">
+                <h1>One Piece Quiz</h1>
+                <div class="quiz-header"> 
+                    <span class="timer">Timer: 0s</span> 
+                    <span class="header-score">Score: 0/10</span>
+                </div>
+                <h2 class="question-text">Question</h2>
+                <div class="option-list">
+                    <div class="option">
+                        <span>Answer 1</span>
+                    </div>  
+                    <div class="option">
+                        <span>Answer 2</span>
+                    </div>
+                    <div class="option">
+                        <span>Answer 3</span>
+                    </div>
+                    <div class="option">
+                        <span>Answer 4>/span>
+                    </div>
+                </div>
+                <div class="quiz-footer">
+                    <span class="question-total">1 of 10</span>
+                    <button class="next-btn">Next</button>
+                </div>
+            </div>
+            <div class="result-box">
+                <h2>Quiz Results!</h2>
+                <div class="percentage-container">
+                    <div class="circular-progress">
+                        <span class="progress-value">0%</span>
+                    </div>
+                    <span class="score-text">Your Score 0 out of 10.</span>
+                    <span class="timer-text">Your timer: 0s</span>
+                </div>
+                <div class="buttons">
+                    <button class ="tryAgain-btn">Try Again</button>
+                    <button class ="goHome-btn">Go To Home</button>
+                </div>
+            </div>
+        </section>
+        
+
+    </div>
+
+
+    <!-- Bootstrap & my scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/scripts/questions.js"></script>
+</body>
+</html>
